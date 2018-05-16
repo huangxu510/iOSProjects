@@ -1,0 +1,27 @@
+[
+  {
+    "clsName" : "BKHomePageViewController",
+    "title" : "记账",
+    "imageName" : "tabBar_bk_normal",
+    "selectedImageName" : "tabBar_bk_selected"
+  },
+  {
+    "clsName" : "BKToolViewController",
+    "title" : "工具",
+    "imageName" : "tabBar_tool_normal",
+    "selectedImageName" : "tabBar_tool_selected"
+  },
+
+  {
+    "clsName" : "BKInformationViewController",
+    "title" : "资讯",
+    "imageName" : "tabBar_information_normal",
+    "selectedImageName" : "tabBar_information_selected"
+  },
+  {
+    "clsName" : "BKMyCenterViewController",
+    "title" : "我的",
+    "imageName" : "tabBar_mycenter_normal",
+    "selectedImageName" : "tabBar_mycenter_selected"
+  }
+]

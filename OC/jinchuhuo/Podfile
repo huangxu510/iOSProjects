@@ -1,0 +1,47 @@
+# Uncomment this line to define a global platform for your project
+# platform :ios, '8.0'
+
+project 'jinchuhuo.xcodeproj'
+
+abstract_target 'defaults' do
+    pod 'Masonry', '~> 0.6.2'
+    pod 'BButton', '~> 4.0.2'
+    pod 'AFNetworking', '~> 3.1.0'
+    pod 'SWTableViewCell', '~> 0.3.7'
+    pod 'MBProgressHUD', '~> 0.9.2'
+    pod 'JSBadgeView', '~> 1.4.1'
+    pod 'LBXScan','~> 1.1.1'
+    pod 'Qiniu', '~> 7.1'
+    pod 'KLCPopup', '~> 1.0'
+    pod 'TTTAttributedLabel'
+    pod 'SSKeychain'
+    pod 'IQKeyboardManager'
+    pod 'THLabel', '~> 1.4'
+    pod 'QBImagePickerController', '~> 3.4.0'
+    pod 'MJRefresh'
+    pod 'MSWeakTimer', '~> 1.1.0'
+    pod 'IDMPhotoBrowser'
+    pod 'SDCycleScrollView','~> 1.64'
+    pod 'UITableView+FDTemplateLayoutCell'
+    pod 'YYKit'
+#    pod 'MLeaksFinder'
+
+    target 'jinchuhuo' do
+    end
+    
+    target 'jinchuhuo_sync_test' do
+        
+    end
+    
+    target 'restaurant' do
+    end
+    
+    target 'takeout' do
+    end
+    
+    target 'jinchuhuoTests' do
+    end
+end
+
+
+

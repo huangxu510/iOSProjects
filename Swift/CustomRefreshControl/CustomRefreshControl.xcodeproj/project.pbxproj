@@ -1,0 +1,344 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4851CA931F5BC8880058E5E8 /* HXHumanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4851CA921F5BC8880058E5E8 /* HXHumanRefreshView.xib */; };
+		4851CA951F5BCA570058E5E8 /* HXMeituanRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4851CA941F5BCA570058E5E8 /* HXMeituanRefreshView.swift */; };
+		4851CA971F5BCA630058E5E8 /* HXMeituanRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4851CA961F5BCA630058E5E8 /* HXMeituanRefreshView.xib */; };
+		4888D12E1F57AE900074B7A9 /* HXRefreshControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888D12B1F57AE900074B7A9 /* HXRefreshControl.swift */; };
+		4888D12F1F57AE900074B7A9 /* HXRefreshView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4888D12C1F57AE900074B7A9 /* HXRefreshView.swift */; };
+		4888D1301F57AE900074B7A9 /* HXRefreshView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4888D12D1F57AE900074B7A9 /* HXRefreshView.xib */; };
+		489411741F5666E3001491FD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 489411731F5666E3001491FD /* AppDelegate.swift */; };
+		489411791F5666E3001491FD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 489411771F5666E3001491FD /* Main.storyboard */; };
+		4894117B1F5666E3001491FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4894117A1F5666E3001491FD /* Assets.xcassets */; };
+		4894117E1F5666E3001491FD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4894117C1F5666E3001491FD /* LaunchScreen.storyboard */; };
+		48B120FF1F56691600534B53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 48B120FE1F56691600534B53 /* ViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4851CA921F5BC8880058E5E8 /* HXHumanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXHumanRefreshView.xib; sourceTree = "<group>"; };
+		4851CA941F5BCA570058E5E8 /* HXMeituanRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXMeituanRefreshView.swift; sourceTree = "<group>"; };
+		4851CA961F5BCA630058E5E8 /* HXMeituanRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXMeituanRefreshView.xib; sourceTree = "<group>"; };
+		4888D12B1F57AE900074B7A9 /* HXRefreshControl.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXRefreshControl.swift; sourceTree = "<group>"; };
+		4888D12C1F57AE900074B7A9 /* HXRefreshView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HXRefreshView.swift; sourceTree = "<group>"; };
+		4888D12D1F57AE900074B7A9 /* HXRefreshView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HXRefreshView.xib; sourceTree = "<group>"; };
+		489411701F5666E3001491FD /* CustomRefreshControl.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CustomRefreshControl.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		489411731F5666E3001491FD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		489411781F5666E3001491FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4894117A1F5666E3001491FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4894117D1F5666E3001491FD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4894117F1F5666E3001491FD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		48B120FE1F56691600534B53 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4894116D1F5666E3001491FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4888D12A1F57AE900074B7A9 /* HXRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				4888D12B1F57AE900074B7A9 /* HXRefreshControl.swift */,
+				4888D12C1F57AE900074B7A9 /* HXRefreshView.swift */,
+				4851CA941F5BCA570058E5E8 /* HXMeituanRefreshView.swift */,
+				4851CA961F5BCA630058E5E8 /* HXMeituanRefreshView.xib */,
+				4888D12D1F57AE900074B7A9 /* HXRefreshView.xib */,
+				4851CA921F5BC8880058E5E8 /* HXHumanRefreshView.xib */,
+			);
+			path = HXRefreshControl;
+			sourceTree = "<group>";
+		};
+		489411671F5666E3001491FD = {
+			isa = PBXGroup;
+			children = (
+				489411721F5666E3001491FD /* CustomRefreshControl */,
+				489411711F5666E3001491FD /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		489411711F5666E3001491FD /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				489411701F5666E3001491FD /* CustomRefreshControl.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		489411721F5666E3001491FD /* CustomRefreshControl */ = {
+			isa = PBXGroup;
+			children = (
+				489411731F5666E3001491FD /* AppDelegate.swift */,
+				48B120FE1F56691600534B53 /* ViewController.swift */,
+				4888D12A1F57AE900074B7A9 /* HXRefreshControl */,
+				489411771F5666E3001491FD /* Main.storyboard */,
+				4894117A1F5666E3001491FD /* Assets.xcassets */,
+				4894117C1F5666E3001491FD /* LaunchScreen.storyboard */,
+				4894117F1F5666E3001491FD /* Info.plist */,
+			);
+			path = CustomRefreshControl;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4894116F1F5666E3001491FD /* CustomRefreshControl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 489411821F5666E3001491FD /* Build configuration list for PBXNativeTarget "CustomRefreshControl" */;
+			buildPhases = (
+				4894116C1F5666E3001491FD /* Sources */,
+				4894116D1F5666E3001491FD /* Frameworks */,
+				4894116E1F5666E3001491FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CustomRefreshControl;
+			productName = CustomRefreshControl;
+			productReference = 489411701F5666E3001491FD /* CustomRefreshControl.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		489411681F5666E3001491FD /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0830;
+				ORGANIZATIONNAME = huangxu;
+				TargetAttributes = {
+					4894116F1F5666E3001491FD = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 5686PPTR3P;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = 4894116B1F5666E3001491FD /* Build configuration list for PBXProject "CustomRefreshControl" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 489411671F5666E3001491FD;
+			productRefGroup = 489411711F5666E3001491FD /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4894116F1F5666E3001491FD /* CustomRefreshControl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4894116E1F5666E3001491FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4851CA971F5BCA630058E5E8 /* HXMeituanRefreshView.xib in Resources */,
+				4888D1301F57AE900074B7A9 /* HXRefreshView.xib in Resources */,
+				4894117E1F5666E3001491FD /* LaunchScreen.storyboard in Resources */,
+				4894117B1F5666E3001491FD /* Assets.xcassets in Resources */,
+				489411791F5666E3001491FD /* Main.storyboard in Resources */,
+				4851CA931F5BC8880058E5E8 /* HXHumanRefreshView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4894116C1F5666E3001491FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4851CA951F5BCA570058E5E8 /* HXMeituanRefreshView.swift in Sources */,
+				4888D12E1F57AE900074B7A9 /* HXRefreshControl.swift in Sources */,
+				48B120FF1F56691600534B53 /* ViewController.swift in Sources */,
+				4888D12F1F57AE900074B7A9 /* HXRefreshView.swift in Sources */,
+				489411741F5666E3001491FD /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		489411771F5666E3001491FD /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				489411781F5666E3001491FD /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4894117C1F5666E3001491FD /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4894117D1F5666E3001491FD /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		489411801F5666E3001491FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		489411811F5666E3001491FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		489411831F5666E3001491FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5686PPTR3P;
+				INFOPLIST_FILE = CustomRefreshControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantawild.CustomRefreshControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		489411841F5666E3001491FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = 5686PPTR3P;
+				INFOPLIST_FILE = CustomRefreshControl/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.fantawild.CustomRefreshControl;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4894116B1F5666E3001491FD /* Build configuration list for PBXProject "CustomRefreshControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				489411801F5666E3001491FD /* Debug */,
+				489411811F5666E3001491FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		489411821F5666E3001491FD /* Build configuration list for PBXNativeTarget "CustomRefreshControl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				489411831F5666E3001491FD /* Debug */,
+				489411841F5666E3001491FD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 489411681F5666E3001491FD /* Project object */;
+}

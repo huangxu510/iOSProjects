@@ -1,0 +1,106 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - BButton (4.0.2)
+  - DACircularProgress (2.3.1)
+  - HappyDNS (0.3.10)
+  - IDMPhotoBrowser (1.9.1):
+    - DACircularProgress
+    - pop
+    - SDWebImage
+  - IQKeyboardManager (4.0.7)
+  - JSBadgeView (1.4.1)
+  - KLCPopup (1.0)
+  - LBXScan (1.1.1):
+    - ZXingObjC (~> 3.0)
+  - Masonry (0.6.4)
+  - MBProgressHUD (0.9.2)
+  - MJRefresh (3.1.12)
+  - MSWeakTimer (1.1.0)
+  - pop (1.0.9)
+  - QBImagePickerController (3.4.0)
+  - Qiniu (7.1.4):
+    - AFNetworking (~> 3)
+    - HappyDNS (~> 0.3)
+  - SDCycleScrollView (1.65):
+    - SDWebImage (~> 3.7)
+  - SDWebImage (3.8.2):
+    - SDWebImage/Core (= 3.8.2)
+  - SDWebImage/Core (3.8.2)
+  - SSKeychain (1.4.1)
+  - SWTableViewCell (0.3.7)
+  - THLabel (1.4.8)
+  - TTTAttributedLabel (2.0.0)
+  - UITableView+FDTemplateLayoutCell (1.4)
+  - YYKit (1.0.9):
+    - YYKit/no-arc (= 1.0.9)
+  - YYKit/no-arc (1.0.9)
+  - ZXingObjC (3.1.0):
+    - ZXingObjC/All (= 3.1.0)
+  - ZXingObjC/All (3.1.0)
+
+DEPENDENCIES:
+  - AFNetworking (~> 3.1.0)
+  - BButton (~> 4.0.2)
+  - IDMPhotoBrowser
+  - IQKeyboardManager
+  - JSBadgeView (~> 1.4.1)
+  - KLCPopup (~> 1.0)
+  - LBXScan (~> 1.1.1)
+  - Masonry (~> 0.6.2)
+  - MBProgressHUD (~> 0.9.2)
+  - MJRefresh
+  - MSWeakTimer (~> 1.1.0)
+  - QBImagePickerController (~> 3.4.0)
+  - Qiniu (~> 7.1)
+  - SDCycleScrollView (~> 1.64)
+  - SSKeychain
+  - SWTableViewCell (~> 0.3.7)
+  - THLabel (~> 1.4)
+  - TTTAttributedLabel
+  - UITableView+FDTemplateLayoutCell
+  - YYKit
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  BButton: ab0f2ed3b998ae73c5188b57d270d81e4a1eeb27
+  DACircularProgress: 4dd437c0fc3da5161cb289e07ac449493d41db71
+  HappyDNS: 06a9fed2796663fd87626dbf02552933265bf059
+  IDMPhotoBrowser: 35e8ba559a88f2a8be4ae04d7fd424665344ba06
+  IQKeyboardManager: 69002bb4fea60596b710e57d426abc00e5063630
+  JSBadgeView: 3861ddee41094284d9468e6d0af5107f703aaac5
+  KLCPopup: 76c5a19227977f1e53d85236f9ef42257c168d98
+  LBXScan: dfb4d8ae8e4cff2aa0c9e1771e43954dce1469a9
+  Masonry: 281802d04d787ea2973179ee8bcb50500579ede2
+  MBProgressHUD: 1569cf7ace17a8bac47aabfbb8580a49690386d1
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  MSWeakTimer: 9426150f933b80ed3acf3f6d228e4b61f0e303c8
+  pop: f667631a5108a2e60d9e8797c9b32ddaf2080bce
+  QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  Qiniu: a4c962782035ee25b9da3e195181d8c384bb75be
+  SDCycleScrollView: f72904c77698a7f93a41bcbbc2d78b073bf7326c
+  SDWebImage: 098e97e6176540799c27e804c96653ee0833d13c
+  SSKeychain: 55cc80f66f5c73da827e3077f02e43528897db41
+  SWTableViewCell: 2a94aadc9d47b2b611fa064566bf57948b95b579
+  THLabel: a2ca21c06cd7daba5c0c6d3095d48f6c137a3d80
+  TTTAttributedLabel: 8cffe8e127e4e82ff3af1e5386d4cd0ad000b656
+  UITableView+FDTemplateLayoutCell: 234e1582bcc4e18461af91155123bb96538ed030
+  YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
+  ZXingObjC: bf15b3814f7a105b6d99f47da2333c93a063650a
+
+PODFILE CHECKSUM: df0294bd9f1f47009f9742389fe3d724efb53417
+
+COCOAPODS: 1.2.0.beta.1

@@ -1,0 +1,31 @@
+# Uncomment the next line to define a global platform for your project
+platform :ios, '8.0'
+use_frameworks!
+# 消除所有pod警告
+inhibit_all_warnings!
+
+# 消除某一个库的警告
+#pod 'YYKit',:inhibit_warnings => true
+
+abstract_target 'defaults' do
+    # 网络
+	pod 'AFNetworking'
+    # 工具
+    pod 'SDWebImage'
+    pod 'YYKit'
+    pod 'IQKeyboardManager'
+    # UI
+    pod 'Masonry'
+    pod 'MJRefresh'
+    pod 'SVProgressHUD'
+
+    
+    target 'BookKeeping123' do
+    end
+    
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for MobileProject2
+
+end

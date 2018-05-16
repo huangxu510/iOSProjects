@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>佣金收入</key>
+	<string>otherIncomeAndExpense_commission</string>
+	<key>租赁收入</key>
+	<string>otherIncomeAndExpense_lease</string>
+	<key>利息收入</key>
+	<string>otherIncomeAndExpense_interest</string>
+	<key>服务收入</key>
+	<string>otherIncomeAndExpense_service</string>
+	<key>投资收入</key>
+	<string>otherIncomeAndExpense_investment</string>
+	<key>其它收入</key>
+	<string>otherIncomeAndExpense_others</string>
+	<key>快递费</key>
+	<string>otherIncomeAndExpense_express</string>
+	<key>门店租金</key>
+	<string>otherIncomeAndExpense_rent</string>
+	<key>宿舍租金</key>
+	<string>otherIncomeAndExpense_dormitory</string>
+	<key>设备租金</key>
+	<string>otherIncomeAndExpense_equipment</string>
+	<key>包装材料</key>
+	<string>otherIncomeAndExpense_Packing</string>
+	<key>薪酬</key>
+	<string>otherIncomeAndExpense_salary</string>
+	<key>提成</key>
+	<string>otherIncomeAndExpense_ percentage</string>
+	<key>奖金</key>
+	<string>otherIncomeAndExpense_bonus</string>
+	<key>社保</key>
+	<string>otherIncomeAndExpense_socialsecurity</string>
+	<key>活动推广</key>
+	<string>otherIncomeAndExpense_extension</string>
+	<key>税费</key>
+	<string>otherIncomeAndExpense_tax</string>
+	<key>利息支出</key>
+	<string>otherIncomeAndExpense_interest</string>
+	<key>其它费用</key>
+	<string>otherIncomeAndExpense_others</string>
+	<key>水电燃气费</key>
+	<string>otherIncomeAndExpense_utilities</string>
+	<key>网络费</key>
+	<string>otherIncomeAndExpense_network</string>
+	<key>交通费</key>
+	<string>otherIncomeAndExpense_traffic</string>
+	<key>维修费</key>
+	<string>otherIncomeAndExpense_repair</string>
+	<key>办公费用</key>
+	<string>otherIncomeAndExpense_officesupplies</string>
+	<key>用餐</key>
+	<string>otherIncomeAndExpense_dine</string>
+	<key>零食</key>
+	<string>otherIncomeAndExpense_snacks</string>
+	<key>娱乐</key>
+	<string>otherIncomeAndExpense_entertainment</string>
+	<key>医疗</key>
+	<string>otherIncomeAndExpense_medical</string>
+	<key>通讯费</key>
+	<string>otherIncomeAndExpense_communication</string>
+	<key>差旅费</key>
+	<string>otherIncomeAndExpense_travel</string>
+	<key>罚款</key>
+	<string>otherIncomeAndExpense_fine</string>
+</dict>
+</plist>
