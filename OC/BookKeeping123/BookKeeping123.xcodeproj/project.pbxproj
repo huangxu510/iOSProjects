@@ -61,8 +61,8 @@
 		4863B96E20AC21F600A58D1D /* MOFSAddressPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4863B96720AC21F600A58D1D /* MOFSAddressPickerView.m */; };
 		4894D76520AC2D6600328C48 /* BKCalculatorUtility.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894D76420AC2D6600328C48 /* BKCalculatorUtility.m */; };
 		4894D76920AC33B500328C48 /* BKCalculatorBaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894D76720AC33B500328C48 /* BKCalculatorBaseViewController.m */; };
-		4894D76A20AC33B500328C48 /* BKCalculatorBaseViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4894D76820AC33B500328C48 /* BKCalculatorBaseViewController.xib */; };
 		4894D76C20AC350000328C48 /* BKToolViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4894D76B20AC350000328C48 /* BKToolViewController.xib */; };
+		4894D77020AD0DBE00328C48 /* UIFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894D76F20AD0DBD00328C48 /* UIFactory.m */; };
 		67B1406BDA2355707651CD1A /* Pods_defaults_BookKeeping123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA4034AED2F99C727119A6A /* Pods_defaults_BookKeeping123.framework */; };
 /* End PBXBuildFile section */
 
@@ -164,8 +164,9 @@
 		4894D76420AC2D6600328C48 /* BKCalculatorUtility.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKCalculatorUtility.m; sourceTree = "<group>"; };
 		4894D76620AC33B500328C48 /* BKCalculatorBaseViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKCalculatorBaseViewController.h; sourceTree = "<group>"; };
 		4894D76720AC33B500328C48 /* BKCalculatorBaseViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKCalculatorBaseViewController.m; sourceTree = "<group>"; };
-		4894D76820AC33B500328C48 /* BKCalculatorBaseViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BKCalculatorBaseViewController.xib; sourceTree = "<group>"; };
 		4894D76B20AC350000328C48 /* BKToolViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BKToolViewController.xib; sourceTree = "<group>"; };
+		4894D76E20AD0DBD00328C48 /* UIFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIFactory.h; sourceTree = "<group>"; };
+		4894D76F20AD0DBD00328C48 /* UIFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIFactory.m; sourceTree = "<group>"; };
 		4FF5E6F2FA6E66CC530DB9D0 /* Pods-defaults-BookKeeping123.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-BookKeeping123.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-BookKeeping123/Pods-defaults-BookKeeping123.release.xcconfig"; sourceTree = "<group>"; };
 		76BE589C50F86365328616CE /* Pods-defaults-BookKeeping123.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-BookKeeping123.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-BookKeeping123/Pods-defaults-BookKeeping123.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA4034AED2F99C727119A6A /* Pods_defaults_BookKeeping123.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_BookKeeping123.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -289,6 +290,8 @@
 				4863B66020AA7DBD00A58D1D /* BKToolViewController.h */,
 				4863B66120AA7DBD00A58D1D /* BKToolViewController.m */,
 				4894D76B20AC350000328C48 /* BKToolViewController.xib */,
+				4894D76620AC33B500328C48 /* BKCalculatorBaseViewController.h */,
+				4894D76720AC33B500328C48 /* BKCalculatorBaseViewController.m */,
 				4863B91220AB181100A58D1D /* BKSmallCalculatorViewController.h */,
 				4863B91320AB181100A58D1D /* BKSmallCalculatorViewController.m */,
 				4863B91520AB183A00A58D1D /* BKCreditCalculatorViewController.h */,
@@ -334,9 +337,6 @@
 				4863B68920AA827400A58D1D /* BKBaseNavigationController.m */,
 				4863B90320AB160C00A58D1D /* BKStaticTableViewController.h */,
 				4863B90420AB160C00A58D1D /* BKStaticTableViewController.m */,
-				4894D76620AC33B500328C48 /* BKCalculatorBaseViewController.h */,
-				4894D76720AC33B500328C48 /* BKCalculatorBaseViewController.m */,
-				4894D76820AC33B500328C48 /* BKCalculatorBaseViewController.xib */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -367,6 +367,7 @@
 		4863B67820AA7F9500A58D1D /* Tool */ = {
 			isa = PBXGroup;
 			children = (
+				4894D76D20AD0DBD00328C48 /* UIFactory */,
 				4863B95A20AC21F600A58D1D /* MOFSPickerManager */,
 				4863B93320AC00CA00A58D1D /* PPNetworkHelper */,
 				4863B88020AB012500A58D1D /* BKEmptyCheckUtility.h */,
@@ -522,6 +523,15 @@
 			path = MOFSPickerManager;
 			sourceTree = "<group>";
 		};
+		4894D76D20AD0DBD00328C48 /* UIFactory */ = {
+			isa = PBXGroup;
+			children = (
+				4894D76E20AD0DBD00328C48 /* UIFactory.h */,
+				4894D76F20AD0DBD00328C48 /* UIFactory.m */,
+			);
+			path = UIFactory;
+			sourceTree = "<group>";
+		};
 		A7C2076332055BDE7646E396 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -607,7 +617,6 @@
 				4863B64620AA797200A58D1D /* Assets.xcassets in Resources */,
 				4863B65F20AA7D9000A58D1D /* BKHomePageViewController.xib in Resources */,
 				4863B94120AC088800A58D1D /* BKNewsTableViewCell.xib in Resources */,
-				4894D76A20AC33B500328C48 /* BKCalculatorBaseViewController.xib in Resources */,
 				4863B66920AA7DD800A58D1D /* BKInformationViewController.xib in Resources */,
 				4894D76C20AC350000328C48 /* BKToolViewController.xib in Resources */,
 				4863B92E20ABDD4E00A58D1D /* BKFeedbackViewController.xib in Resources */,
@@ -689,6 +698,7 @@
 				4863B65E20AA7D9000A58D1D /* BKHomePageViewController.m in Sources */,
 				4863B67220AA7E3300A58D1D /* BKTabBarViewController.m in Sources */,
 				4863B92D20ABDD4E00A58D1D /* BKFeedbackViewController.m in Sources */,
+				4894D77020AD0DBE00328C48 /* UIFactory.m in Sources */,
 				4863B69A20AA8A9200A58D1D /* BKSetPasswordViewController.m in Sources */,
 				4863B63E20AA797100A58D1D /* AppDelegate.m in Sources */,
 				4863B69020AA8A7800A58D1D /* BKLoginViewController.m in Sources */,

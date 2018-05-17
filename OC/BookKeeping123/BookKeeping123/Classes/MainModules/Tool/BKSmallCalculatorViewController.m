@@ -26,9 +26,6 @@
 
 - (void)setupUI {
     
-    
-    
-    
     WeakSelf;
     BKWordArrowItem *item0 = [BKWordArrowItem itemWithTitle:@"贷款总金额（元）" subTitle:@""];
     item0.hasTextField = YES;

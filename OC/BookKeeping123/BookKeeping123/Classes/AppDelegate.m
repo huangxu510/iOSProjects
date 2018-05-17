@@ -76,8 +76,8 @@
     // 调整TabBar UI风格
     [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
     
-    [SVProgressHUD setMinimumDismissTimeInterval:2];
-    [SVProgressHUD setMaximumDismissTimeInterval:3];
+    [SVProgressHUD setMinimumDismissTimeInterval:1.5];
+    [SVProgressHUD setMaximumDismissTimeInterval:1.5];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
 }
 

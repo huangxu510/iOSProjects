@@ -69,10 +69,10 @@
 /**
  *  不同屏幕尺寸字体适配（375，667是因为效果图为IPHONE6 如果不是则根据实际情况修改）
  */
-#define kScreenWidthRatio  (kScreenWidth / 375.0)
-#define kScreenHeightRatio (kScreenHeight / 667.0)
-#define AdaptedWidth(x)  ceilf((x) * kScreenWidthRatio)
-#define AdaptedHeight(x) ceilf((x) * kScreenHeightRatio)
+#define kWidthFlexRatio  (kScreenWidth / 375.0)
+#define kHeightFlexRatio (kScreenHeight / 667.0)
+#define AdaptedWidth(x)  ceilf((x) * kWidthFlexRatio)
+#define AdaptedHeight(x) ceilf((x) * kHeightFlexRatio)
 #define AdaptedFontSize(R)     [UIFont systemFontOfSize:AdaptedWidth(R)]
 
 
