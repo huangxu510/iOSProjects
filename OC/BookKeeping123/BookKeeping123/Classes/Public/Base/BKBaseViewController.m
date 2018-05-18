@@ -42,7 +42,7 @@ UITableViewDataSource
 - (UITableView *)tableView {
     if (nil == _tableView) {
         
-        _tableView = [[UITableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
+        _tableView = [[BKTableView alloc] initWithFrame:self.view.bounds style:UITableViewStylePlain];
         _tableView.delegate = self;
         _tableView.dataSource = self;
         _tableView.backgroundColor = kViewBgColor;

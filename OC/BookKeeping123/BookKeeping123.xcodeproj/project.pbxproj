@@ -67,6 +67,7 @@
 		4894D79520AEC76800328C48 /* BKCalculateResultView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4894D79420AEC76800328C48 /* BKCalculateResultView.xib */; };
 		4894D79920AECE7400328C48 /* BKCalculateResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894D79720AECE7400328C48 /* BKCalculateResultTableViewCell.m */; };
 		4894D79A20AECE7400328C48 /* BKCalculateResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4894D79820AECE7400328C48 /* BKCalculateResultTableViewCell.xib */; };
+		4894D79D20AF04F700328C48 /* BKTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894D79C20AF04F700328C48 /* BKTableView.m */; };
 		67B1406BDA2355707651CD1A /* Pods_defaults_BookKeeping123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA4034AED2F99C727119A6A /* Pods_defaults_BookKeeping123.framework */; };
 /* End PBXBuildFile section */
 
@@ -177,6 +178,8 @@
 		4894D79620AECE7400328C48 /* BKCalculateResultTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKCalculateResultTableViewCell.h; sourceTree = "<group>"; };
 		4894D79720AECE7400328C48 /* BKCalculateResultTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKCalculateResultTableViewCell.m; sourceTree = "<group>"; };
 		4894D79820AECE7400328C48 /* BKCalculateResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BKCalculateResultTableViewCell.xib; sourceTree = "<group>"; };
+		4894D79B20AF04F700328C48 /* BKTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKTableView.h; sourceTree = "<group>"; };
+		4894D79C20AF04F700328C48 /* BKTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKTableView.m; sourceTree = "<group>"; };
 		4FF5E6F2FA6E66CC530DB9D0 /* Pods-defaults-BookKeeping123.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-BookKeeping123.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-BookKeeping123/Pods-defaults-BookKeeping123.release.xcconfig"; sourceTree = "<group>"; };
 		76BE589C50F86365328616CE /* Pods-defaults-BookKeeping123.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-BookKeeping123.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-BookKeeping123/Pods-defaults-BookKeeping123.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA4034AED2F99C727119A6A /* Pods_defaults_BookKeeping123.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_BookKeeping123.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -391,6 +394,8 @@
 				4863B90F20AB167400A58D1D /* BKStaticTableViewCell.h */,
 				4863B91020AB167400A58D1D /* BKStaticTableViewCell.m */,
 				4863B92320AB1CA700A58D1D /* BKStaticTableViewCell.xib */,
+				4894D79B20AF04F700328C48 /* BKTableView.h */,
+				4894D79C20AF04F700328C48 /* BKTableView.m */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -681,6 +686,7 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-defaults-BookKeeping123/Pods-defaults-BookKeeping123-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
@@ -692,6 +698,7 @@
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
@@ -767,6 +774,7 @@
 				4894D76520AC2D6600328C48 /* BKCalculatorUtility.m in Sources */,
 				4863B91A20AB185C00A58D1D /* BKProvidentFundCalculatorViewController.m in Sources */,
 				4894D76920AC33B500328C48 /* BKCalculatorBaseViewController.m in Sources */,
+				4894D79D20AF04F700328C48 /* BKTableView.m in Sources */,
 				4894D78D20AEC3F200328C48 /* MOFSAddressPickerView.m in Sources */,
 				4894D79920AECE7400328C48 /* BKCalculateResultTableViewCell.m in Sources */,
 				4894D78920AEC3F200328C48 /* MOFSToolView.m in Sources */,

@@ -14,12 +14,13 @@ abstract_target 'defaults' do
     pod 'SDWebImage'
     pod 'YYKit'
     pod 'IQKeyboardManager'
+    pod 'FDFullscreenPopGesture', '1.1'
     # UI
     pod 'Masonry'
     pod 'MJRefresh'
     pod 'SVProgressHUD'
     pod 'pop'
-
+    
     
     target 'BookKeeping123' do
     end

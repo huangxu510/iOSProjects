@@ -14,6 +14,7 @@
 @property (weak, nonatomic) IBOutlet UIImageView *picImageView;
 @property (weak, nonatomic) IBOutlet UILabel *titleLabel;
 @property (weak, nonatomic) IBOutlet NSLayoutConstraint *titleLabelLeftConstraint; // 139
+@property (weak, nonatomic) IBOutlet UILabel *datatimeLabel;
 
 
 @end
@@ -31,7 +32,7 @@
     _data = data;
     
     self.titleLabel.text = data.title;
-    
+    self.datatimeLabel.text = data.time;
     NSURL *url = [NSURL URLWithString:data.pic];
     [self.picImageView sd_setImageWithURL:url placeholderImage:IMG(@"es_hold_2")];
 }

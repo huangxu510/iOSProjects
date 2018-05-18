@@ -8,10 +8,11 @@
 
 #import <UIKit/UIKit.h>
 #import "MJRefresh.h"
+#import "BKTableView.h"
 
 @interface BKBaseViewController : UIViewController
 
-@property (nonatomic, strong) UITableView *tableView;
+@property (nonatomic, strong) BKTableView *tableView;
 
 /**
  *  是否显示返回按钮,默认情况是YES

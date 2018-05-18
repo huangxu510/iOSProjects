@@ -23,10 +23,12 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-lI-9Wk">
-                    <rect key="frame" x="62" y="338" width="250" height="44"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-lI-9Wk">
+                    <rect key="frame" x="60" y="338" width="254" height="44"/>
                     <color key="backgroundColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="cST-bf-J0y"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <state key="normal" title="注  册">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -106,11 +108,14 @@
                 <constraint firstItem="sjV-VG-7GG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="Fdx-B4-Aco"/>
                 <constraint firstItem="ieC-gI-aSh" firstAttribute="leading" secondItem="wZe-Z1-ndy" secondAttribute="trailing" constant="15" id="JQI-cw-sb9"/>
                 <constraint firstItem="DHf-8B-AGZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jey-fQ-Mae"/>
+                <constraint firstItem="fZf-lI-9Wk" firstAttribute="top" secondItem="wZe-Z1-ndy" secondAttribute="bottom" constant="56" id="SmW-1p-jJf"/>
                 <constraint firstItem="DHf-8B-AGZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="XVe-DT-EWr"/>
                 <constraint firstAttribute="trailing" secondItem="sjV-VG-7GG" secondAttribute="trailing" constant="60" id="XmM-YG-Ij6"/>
+                <constraint firstItem="fZf-lI-9Wk" firstAttribute="leading" secondItem="wZe-Z1-ndy" secondAttribute="leading" id="asO-F3-HQ7"/>
                 <constraint firstItem="DU2-ws-bib" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="bT8-B3-64a"/>
                 <constraint firstItem="wZe-Z1-ndy" firstAttribute="top" secondItem="sjV-VG-7GG" secondAttribute="bottom" constant="28" id="beI-Z4-hJb"/>
                 <constraint firstItem="3aP-bC-y3O" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="brL-fS-Jvq"/>
+                <constraint firstItem="fZf-lI-9Wk" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="coW-wF-V6T"/>
                 <constraint firstItem="DU2-ws-bib" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="f71-jr-5hY"/>
                 <constraint firstItem="3aP-bC-y3O" firstAttribute="top" secondItem="DHf-8B-AGZ" secondAttribute="bottom" constant="29" id="h1W-ct-hcq"/>
                 <constraint firstItem="ieC-gI-aSh" firstAttribute="top" secondItem="sjV-VG-7GG" secondAttribute="bottom" constant="28" id="vne-jF-9cK"/>

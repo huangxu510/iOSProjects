@@ -64,6 +64,7 @@
                 </constraints>
             </tableViewCellContentView>
             <connections>
+                <outlet property="datatimeLabel" destination="d9D-3P-rvA" id="e3I-eJ-aH5"/>
                 <outlet property="picImageView" destination="9jd-hR-Ma4" id="z3A-t8-0gw"/>
                 <outlet property="titleLabel" destination="xCx-cY-yv4" id="UCc-4k-GQy"/>
                 <outlet property="titleLabelLeftConstraint" destination="DYn-N3-dDG" id="BAm-WZ-gfz"/>
