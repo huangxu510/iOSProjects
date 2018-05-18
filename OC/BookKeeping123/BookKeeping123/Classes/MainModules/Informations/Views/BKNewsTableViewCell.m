@@ -32,13 +32,7 @@
     
     self.titleLabel.text = data.title;
     
-    if (!empty(data.pic)) {
-        NSURL *url = [NSURL URLWithString:data.pic];
-        [self.picImageView sd_setImageWithURL:url placeholderImage:IMG(@"es_hold_2")];
-        self.titleLabelLeftConstraint.constant = 139;
-    } else {
-        self.picImageView.image = nil;
-        self.titleLabelLeftConstraint.constant = 16;
-    }
+    NSURL *url = [NSURL URLWithString:data.pic];
+    [self.picImageView sd_setImageWithURL:url placeholderImage:IMG(@"es_hold_2")];
 }
 @end

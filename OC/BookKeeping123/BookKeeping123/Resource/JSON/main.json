@@ -2,26 +2,26 @@
   {
     "clsName" : "BKHomePageViewController",
     "title" : "记账",
-    "imageName" : "tabBar_bk_normal",
-    "selectedImageName" : "tabBar_bk_selected"
+    "imageName" : "tabbar_Bookkeeping",
+    "selectedImageName" : "tabbar_Bookkeeping_Selected"
   },
   {
     "clsName" : "BKToolViewController",
     "title" : "工具",
-    "imageName" : "tabBar_tool_normal",
-    "selectedImageName" : "tabBar_tool_selected"
+    "imageName" : "tabbar_tool",
+    "selectedImageName" : "tabbar_tool_Selected"
   },
 
   {
     "clsName" : "BKInformationViewController",
     "title" : "资讯",
-    "imageName" : "tabBar_information_normal",
-    "selectedImageName" : "tabBar_information_selected"
+    "imageName" : "tabbar_information",
+    "selectedImageName" : "tabbar_information_Selected"
   },
   {
     "clsName" : "BKMyCenterViewController",
     "title" : "我的",
-    "imageName" : "tabBar_mycenter_normal",
-    "selectedImageName" : "tabBar_mycenter_selected"
+    "imageName" : "tabbar_mine",
+    "selectedImageName" : "tabbar_mine_Selected"
   }
 ]

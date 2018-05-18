@@ -51,10 +51,10 @@
     self.viewControllers = viewControllers;
     
     // 未选中字体颜色
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
-    
-    // 选中字体颜色
-    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:HexColor(0xfff100)} forState:UIControlStateSelected];
+//    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:[UIColor whiteColor]} forState:UIControlStateNormal];
+//
+//    // 选中字体颜色
+//    [[UITabBarItem appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName:HexColor(0xfff100)} forState:UIControlStateSelected];
 }
 
 - (void)setupTabBarUI {
@@ -69,7 +69,7 @@
     
     // 选中状态下的文字属性
     NSMutableDictionary *selectedAttrs = [NSMutableDictionary dictionary];
-    selectedAttrs[NSForegroundColorAttributeName] = [UIColor blackColor];
+    selectedAttrs[NSForegroundColorAttributeName] = HexColor(0xD77C52);
     selectedAttrs[NSFontAttributeName] = [UIFont systemFontOfSize:9];
     
     // 设置文字属性
@@ -81,9 +81,9 @@
     UITabBar *tabBar = [UITabBar appearance];
     
     // 去除 TabBar 自带的顶部阴影
-    [tabBar setShadowImage:[[UIImage alloc] init]];
-    [tabBar setBackgroundImage:[[UIImage alloc] init]];
-    [tabBar setBackgroundColor:[UIColor whiteColor]];
+//    [tabBar setShadowImage:[[UIImage alloc] init]];
+//    [tabBar setBackgroundImage:[[UIImage alloc] init]];
+//    [tabBar setBackgroundColor:[UIColor whiteColor]];
     //    [self hideTabBadgeBackgroundSeparator];
 }
 
@@ -95,7 +95,8 @@
     NSString *selectedImageName = dict[@"selectedImageName"];
     UIViewController *vc = [[NSClassFromString(className) alloc] init];
     BKBaseNavigationController *nav = [[BKBaseNavigationController alloc] initWithRootViewController:vc];
-    nav.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:IMG(imageName) selectedImage:IMG(selectedImageName)];
+    
+    nav.tabBarItem = [[UITabBarItem alloc] initWithTitle:title image:IMG(imageName) selectedImage:[IMG(selectedImageName) imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal]];
     return nav;
 }
 

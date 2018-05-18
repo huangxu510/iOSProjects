@@ -81,11 +81,8 @@
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath {
-    BKNewsModel *model = self.newsList[indexPath.row];
-    if (!empty(model.pic)) {
-        return 100;
-    }
-    return 70;
+
+    return 100;
 }
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {

@@ -14,7 +14,7 @@
 {
     self = [super init];
     if (self) {
-        _titleColor = HexColor(0x33333);
+        _titleColor = [UIColor blackColor];
         _subTitleColor = [UIColor lightGrayColor];
         
         _cellHeight = AdaptedWidth(50);

@@ -11,6 +11,7 @@
 @interface BKSetPasswordViewController ()
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField1;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField2;
+@property (weak, nonatomic) IBOutlet UIButton *submitButton;
 
 @end
 
@@ -19,6 +20,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    BKCornerRadius(self.submitButton, 5);
 }
 
 - (IBAction)submit {

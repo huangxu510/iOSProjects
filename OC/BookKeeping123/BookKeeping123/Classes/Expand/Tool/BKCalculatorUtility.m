@@ -14,12 +14,17 @@
 {
     CGFloat monthInterest = 0.0;
     if (repaymentWay == kRepaymentWay1) {
-        monthInterest = capital * rate * powf(1 + rate, months) / (powf(1 + rate, months) - 1) - capital;
+        monthInterest = capital * rate * powf(1 + rate, months) / (powf(1 + rate, months) - 1) / months;
     } else if (repaymentWay == kRepaymentWay2) {
 
         monthInterest = (months + 1) * capital * rate / 2 / months;
     }
     return monthInterest;
 }
+
+//+ (CGFloat)calculateCreditInterest:(CGFloat)capotal months:(NSInteger)months rate:(CGFloat)rate way:(RepaymentWay)repaymentWay
+//{
+//
+//}
 
 @end

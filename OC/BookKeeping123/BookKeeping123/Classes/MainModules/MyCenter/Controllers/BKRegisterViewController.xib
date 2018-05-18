@@ -12,6 +12,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BKRegisterViewController">
             <connections>
                 <outlet property="getCodeButton" destination="ieC-gI-aSh" id="B1d-Er-0yj"/>
+                <outlet property="registerButton" destination="fZf-lI-9Wk" id="aRq-sb-5Yz"/>
                 <outlet property="userNameTextField" destination="sjV-VG-7GG" id="7ff-FL-WQn"/>
                 <outlet property="verificationCodeTextField" destination="wZe-Z1-ndy" id="vma-lh-Fjx"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -25,6 +26,7 @@
                 <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-lI-9Wk">
                     <rect key="frame" x="62" y="338" width="250" height="44"/>
                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <color key="backgroundColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <fontDescription key="fontDescription" type="system" pointSize="19"/>
                     <state key="normal" title="注  册">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -46,7 +48,7 @@
                         <constraint firstAttribute="height" constant="44" id="9bh-1I-Ooo"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-VG-7GG">
@@ -90,13 +92,13 @@
                         <constraint firstAttribute="height" constant="44" id="FT5-zL-fPJ"/>
                         <constraint firstAttribute="width" constant="50" id="Hc3-15-Z0c"/>
                     </constraints>
-                    <state key="normal" image="back_icon"/>
+                    <state key="normal" image="nav_back"/>
                     <connections>
                         <action selector="handlePop" destination="-1" eventType="touchUpInside" id="yrF-PR-t7O"/>
                     </connections>
                 </button>
             </subviews>
-            <color key="backgroundColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="sjV-VG-7GG" firstAttribute="top" secondItem="3aP-bC-y3O" secondAttribute="bottom" constant="41" id="4Dk-rx-Hib"/>
                 <constraint firstAttribute="trailing" secondItem="ieC-gI-aSh" secondAttribute="trailing" constant="60" id="83r-GB-Kvn"/>
@@ -117,7 +119,7 @@
         </view>
     </objects>
     <resources>
-        <image name="back_icon" width="22" height="22"/>
-        <image name="login_icon" width="51" height="51"/>
+        <image name="login_icon" width="102" height="102"/>
+        <image name="nav_back" width="22" height="22"/>
     </resources>
 </document>

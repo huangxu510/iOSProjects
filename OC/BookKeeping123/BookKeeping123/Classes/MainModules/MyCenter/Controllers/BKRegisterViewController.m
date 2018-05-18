@@ -15,6 +15,7 @@
 @property (weak, nonatomic) IBOutlet UITextField *verificationCodeTextField;
 @property (weak, nonatomic) IBOutlet UIButton *getCodeButton;
 @property (nonatomic, strong) NSTimer *timer;
+@property (weak, nonatomic) IBOutlet UIButton *registerButton;
 
 @end
 
@@ -24,6 +25,7 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
     self.title = @"注册";
+    BKCornerRadius(self.registerButton, 5);
 }
 
 - (IBAction)handleGetVerificationCode {

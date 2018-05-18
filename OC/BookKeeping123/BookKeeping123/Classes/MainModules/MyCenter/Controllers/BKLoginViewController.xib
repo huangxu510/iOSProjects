@@ -12,6 +12,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BKLoginViewController">
             <connections>
+                <outlet property="loginButton" destination="6ta-I5-7aD" id="LDr-Qg-s0p"/>
                 <outlet property="passwordTextField" destination="CC8-fe-IYw" id="rt1-9o-YIT"/>
                 <outlet property="userNameTextField" destination="Jg7-15-7G6" id="eY3-zf-peQ"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -24,6 +25,7 @@
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6ta-I5-7aD">
                     <rect key="frame" x="62" y="314" width="250" height="44"/>
+                    <color key="backgroundColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="zKr-Gi-ZEK"/>
                     </constraints>
@@ -49,7 +51,7 @@
                         <constraint firstAttribute="height" constant="44" id="nHi-Fy-A9O"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                    <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <color key="textColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ihO-2c-3Xf">
@@ -59,7 +61,7 @@
                         <constraint firstAttribute="width" constant="50" id="ykh-v8-aiP"/>
                     </constraints>
                     <state key="normal" title="注册">
-                        <color key="titleColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                        <color key="titleColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     </state>
                     <connections>
                         <action selector="handleRegister" destination="-1" eventType="touchUpInside" id="6RV-Lb-5gv"/>
@@ -82,7 +84,7 @@
                     <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                 </textField>
             </subviews>
-            <color key="backgroundColor" red="0.90404295921325684" green="0.46500521898269653" blue="0.27870848774909973" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="6ta-I5-7aD" firstAttribute="top" secondItem="CC8-fe-IYw" secondAttribute="bottom" constant="35" id="3XE-MU-hNw"/>
                 <constraint firstAttribute="trailing" secondItem="ihO-2c-3Xf" secondAttribute="trailing" id="5tk-Ta-dfS"/>
@@ -104,6 +106,6 @@
         </view>
     </objects>
     <resources>
-        <image name="login_icon" width="51" height="51"/>
+        <image name="login_icon" width="102" height="102"/>
     </resources>
 </document>

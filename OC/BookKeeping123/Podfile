@@ -18,6 +18,7 @@ abstract_target 'defaults' do
     pod 'Masonry'
     pod 'MJRefresh'
     pod 'SVProgressHUD'
+    pod 'pop'
 
     
     target 'BookKeeping123' do

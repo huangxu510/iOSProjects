@@ -7,7 +7,6 @@
 //
 
 #import "BKSmallCalculatorViewController.h"
-#import "MOFSPickerManager.h"
 
 @interface BKSmallCalculatorViewController ()
 

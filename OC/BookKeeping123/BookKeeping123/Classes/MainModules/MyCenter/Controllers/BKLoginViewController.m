@@ -13,6 +13,7 @@
 
 @property (weak, nonatomic) IBOutlet UITextField *userNameTextField;
 @property (weak, nonatomic) IBOutlet UITextField *passwordTextField;
+@property (weak, nonatomic) IBOutlet UIButton *loginButton;
 
 @end
 
@@ -23,6 +24,7 @@
     // Do any additional setup after loading the view from its nib.
     
     self.title = @"登录";
+    BKCornerRadius(self.loginButton, 5);
 }
 
 - (void)viewWillAppear:(BOOL)animated {

@@ -73,8 +73,6 @@
     [[UINavigationBar appearance] setTranslucent:NO];
     [[UINavigationBar appearance] setTitleTextAttributes:@{NSForegroundColorAttributeName: [UIColor whiteColor], NSFontAttributeName : [UIFont boldSystemFontOfSize:18]}];
     
-    // 调整TabBar UI风格
-    [[UITabBar appearance] setBarTintColor:[UIColor whiteColor]];
     
     [SVProgressHUD setMinimumDismissTimeInterval:1.5];
     [SVProgressHUD setMaximumDismissTimeInterval:1.5];

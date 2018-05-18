@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="sfA-oF-z5l" customClass="BKCalculateResultView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view alpha="0.29999999999999999" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="LAG-B9-HAu">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <gestureRecognizers/>
+                    <connections>
+                        <outletCollection property="gestureRecognizers" destination="VJ8-ck-hdj" appends="YES" id="wtw-eR-1Bl"/>
+                    </connections>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pa4-n4-qB4">
+                    <rect key="frame" x="50" y="251.5" width="275" height="163"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="计算结果" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uma-IH-zX4">
+                            <rect key="frame" x="0.0" y="0.0" width="275" height="35"/>
+                            <color key="backgroundColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="35" id="9Dd-AK-ePs"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <color key="textColor" red="0.97254901959999995" green="0.97254901959999995" blue="0.97254901959999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="VZy-1x-ynn">
+                            <rect key="frame" x="0.0" y="35" width="275" height="128"/>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="330-0C-Gp4"/>
+                            </constraints>
+                            <connections>
+                                <outlet property="dataSource" destination="sfA-oF-z5l" id="u9f-SG-z6L"/>
+                                <outlet property="delegate" destination="sfA-oF-z5l" id="0T4-G1-HVm"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="uma-IH-zX4" firstAttribute="leading" secondItem="pa4-n4-qB4" secondAttribute="leading" id="6Wr-AL-72b"/>
+                        <constraint firstItem="VZy-1x-ynn" firstAttribute="top" secondItem="uma-IH-zX4" secondAttribute="bottom" id="DZq-qM-iEL"/>
+                        <constraint firstAttribute="trailing" secondItem="VZy-1x-ynn" secondAttribute="trailing" id="DaX-kW-uNk"/>
+                        <constraint firstItem="VZy-1x-ynn" firstAttribute="top" secondItem="uma-IH-zX4" secondAttribute="bottom" id="EJv-WU-AMF"/>
+                        <constraint firstItem="VZy-1x-ynn" firstAttribute="leading" secondItem="pa4-n4-qB4" secondAttribute="leading" id="Fnr-aM-jwX"/>
+                        <constraint firstAttribute="bottom" secondItem="VZy-1x-ynn" secondAttribute="bottom" id="MVR-fX-78e"/>
+                        <constraint firstAttribute="trailing" secondItem="uma-IH-zX4" secondAttribute="trailing" id="TF1-xT-Rcr"/>
+                        <constraint firstItem="uma-IH-zX4" firstAttribute="top" secondItem="pa4-n4-qB4" secondAttribute="top" id="qYE-ro-0LR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="pa4-n4-qB4" firstAttribute="centerX" secondItem="sfA-oF-z5l" secondAttribute="centerX" id="4m9-gF-vIy"/>
+                <constraint firstItem="LAG-B9-HAu" firstAttribute="leading" secondItem="sfA-oF-z5l" secondAttribute="leading" id="HY3-fo-sHL"/>
+                <constraint firstAttribute="bottom" secondItem="LAG-B9-HAu" secondAttribute="bottom" id="Hxb-MW-T7l"/>
+                <constraint firstItem="pa4-n4-qB4" firstAttribute="leading" secondItem="sfA-oF-z5l" secondAttribute="leading" constant="50" id="NCS-Uf-bKp"/>
+                <constraint firstItem="pa4-n4-qB4" firstAttribute="centerY" secondItem="sfA-oF-z5l" secondAttribute="centerY" id="NMe-rX-aK6"/>
+                <constraint firstItem="LAG-B9-HAu" firstAttribute="top" secondItem="sfA-oF-z5l" secondAttribute="top" id="a72-SS-Bhr"/>
+                <constraint firstAttribute="trailing" secondItem="LAG-B9-HAu" secondAttribute="trailing" id="qRQ-Bq-UBJ"/>
+            </constraints>
+            <connections>
+                <outlet property="backgroundMaskView" destination="LAG-B9-HAu" id="78e-ZP-Eth"/>
+                <outlet property="contentView" destination="pa4-n4-qB4" id="xwd-E3-CKC"/>
+                <outlet property="tableHeightConstraint" destination="330-0C-Gp4" id="Igb-fD-4vw"/>
+                <outlet property="tableView" destination="VZy-1x-ynn" id="Tvo-pm-xD0"/>
+            </connections>
+            <point key="canvasLocation" x="-114.5" y="-5.5"/>
+        </view>
+        <tapGestureRecognizer id="VJ8-ck-hdj">
+            <connections>
+                <action selector="dismiss:" destination="sfA-oF-z5l" id="l2u-Aj-WDg"/>
+            </connections>
+        </tapGestureRecognizer>
+    </objects>
+</document>

@@ -17,6 +17,7 @@ PODS:
   - IQKeyboardManager (5.0.8)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.3)
+  - pop (1.0.10)
   - SDWebImage (4.3.3):
     - SDWebImage/Core (= 4.3.3)
   - SDWebImage/Core (4.3.3)
@@ -30,6 +31,7 @@ DEPENDENCIES:
   - IQKeyboardManager
   - Masonry
   - MJRefresh
+  - pop
   - SDWebImage
   - SVProgressHUD
   - YYKit
@@ -40,6 +42,7 @@ SPEC REPOS:
     - IQKeyboardManager
     - Masonry
     - MJRefresh
+    - pop
     - SDWebImage
     - SVProgressHUD
     - YYKit
@@ -49,10 +52,11 @@ SPEC CHECKSUMS:
   IQKeyboardManager: 266cb7b1d11f94a3e71229d77f960f9a1b538e5b
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
+  pop: 82ca6b068ce9278fd350fd9dd09482a0ce9492e6
   SDWebImage: de4d90b5bff3571eae7bd16202b1f43135409fa5
   SVProgressHUD: 1428aafac632c1f86f62aa4243ec12008d7a51d6
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 1c744312146bdaee58edf99511798e3cc67d998d
+PODFILE CHECKSUM: dde6fbbbfdaa5e425e445838490da210254bcbe2
 
 COCOAPODS: 1.5.2
