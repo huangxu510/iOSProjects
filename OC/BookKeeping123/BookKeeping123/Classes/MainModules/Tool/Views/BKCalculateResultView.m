@@ -9,7 +9,7 @@
 #import "BKCalculateResultView.h"
 #import <pop/POP.h>
 
-#define kRowHeight 30
+#define kRowHeight 35
 #define kMaxTableViewHeight 180
 
 @interface BKCalculateResultView () <UITableViewDelegate, UITableViewDataSource>
@@ -33,6 +33,7 @@
 
 + (void)showWithDataSource:(NSArray<BKCalculateResultTableViewCellModel *> *)dataSource {
     BKCalculateResultView *view = [[NSBundle mainBundle] loadNibNamed:@"BKCalculateResultView" owner:nil options:nil].firstObject;
+    view.frame = kKeyWindow.bounds;
     [kKeyWindow addSubview:view];
     
     POPSpringAnimation *anim = [POPSpringAnimation animationWithPropertyNamed:kPOPLayerScaleXY];

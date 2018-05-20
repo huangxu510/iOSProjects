@@ -10,11 +10,14 @@
 #import "BKNewsModel.h"
 #import "BKNewsTableViewCell.h"
 #import "BKWebViewController.h"
+#import <SDCycleScrollView/SDCycleScrollView.h>
 
-@interface BKInformationViewController () <UITableViewDelegate, UITableViewDataSource>
+@interface BKInformationViewController () <UITableViewDelegate, UITableViewDataSource, SDCycleScrollViewDelegate>
 
 @property (nonatomic, assign) NSInteger pageIndex;
 @property (nonatomic, strong) NSMutableArray *newsList;
+@property (nonatomic, copy) NSArray *bannerList;
+@property (nonatomic, strong) SDCycleScrollView *cycleView;
 
 @end
 
@@ -31,6 +34,39 @@
     [self.tableView.mj_header beginRefreshing];
     
     [self.tableView registerNib:[UINib nibWithNibName:@"BKNewsTableViewCell" bundle:nil] forCellReuseIdentifier:@"BKNewsTableViewCell"];
+    
+//    [self setupUI];
+}
+
+- (void)setupUI {
+    CGRect frame = CGRectMake(0, 0, kScreenWidth, AdaptedHeight(200));
+    SDCycleScrollView *cycleView = [SDCycleScrollView cycleScrollViewWithFrame:frame delegate:self placeholderImage:IMG(@"es_hold_2")];
+    self.tableView.tableHeaderView = cycleView;
+}
+
+- (SDCycleScrollView *)cycleView {
+    if (_cycleView == nil) {
+        CGRect frame = CGRectMake(0, 0, kScreenWidth, AdaptedHeight(200));
+        _cycleView = [SDCycleScrollView cycleScrollViewWithFrame:frame delegate:self placeholderImage:[UIImage imageNamed:@"es_hold_2"]];
+//        _cycleView.showPageControl = NO;
+        _cycleView.autoScrollTimeInterval = 3;
+        _cycleView.pageControlStyle = SDCycleScrollViewPageContolStyleAnimated;
+        _cycleView.pageControlAliment = SDCycleScrollViewPageContolAlimentRight;
+        _cycleView.currentPageDotColor = [UIColor whiteColor]; // 自定义分页控件小圆标颜色
+        self.tableView.tableHeaderView = _cycleView;
+    }
+    return _cycleView;
+}
+
+- (void)setupBannerViewDataSource {
+    NSMutableArray *imageList = [NSMutableArray array];
+    NSMutableArray *titleList = [NSMutableArray array];
+    for (BKNewsModel *model in self.bannerList) {
+        [imageList addObject:model.pic];
+        [titleList addObject:model.title];
+    }
+    self.cycleView.imageURLStringsGroup = imageList;
+    self.cycleView.titlesGroup = titleList;
 }
 
 - (void)headerRefreshing {
@@ -45,18 +81,30 @@
 
 - (void)loadData {
     
-    NSDictionary *dict = @{
-                           @"start" : @(_pageIndex)
-                           };
-    [PPNetworkHelper GET:@"https://way.jd.com/jisuapi/get?channel=%E8%B4%A2%E7%BB%8F&num=15&appkey=3830f45c87d998708d4d44c7a99f171f" parameters:dict success:^(id responseObject) {
+    NSInteger pageSize = 40;
+    NSString *url = [[NSString stringWithFormat:@"https://way.jd.com/jisuapi/get?channel=财经&num=%ld&appkey=3830f45c87d998708d4d44c7a99f171f&start=%ld", pageSize, pageSize * _pageIndex] stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];
+    [PPNetworkHelper GET:url parameters:nil success:^(id responseObject) {
         [self.tableView.mj_header endRefreshing];
         [self.tableView.mj_footer endRefreshing];
         if ([responseObject isKindOfClass:[NSDictionary class]]) {
             NSArray *list = [NSArray modelArrayWithClass:[BKNewsModel class] json:responseObject[@"result"][@"result"][@"list"]];
+            NSMutableArray *list1 = [NSMutableArray array];
+            NSMutableArray *bannerList = [NSMutableArray array];
+            for (BKNewsModel *model in list) {
+                if (!empty(model.pic)) {
+                    if (self.pageIndex == 0 && bannerList.count < 3) {
+                        [bannerList addObject:model];
+                    } else {
+                        [list1 addObject:model];
+                    }
+                }
+            }
             if (self.pageIndex == 0) {
                 [self.newsList removeAllObjects];
+                self.bannerList = bannerList;
+                [self setupBannerViewDataSource];
             }
-            [self.newsList addObjectsFromArray:list];
+            [self.newsList addObjectsFromArray:list1];
             [self.tableView reloadData];
         }
         
@@ -95,5 +143,17 @@
     vc.title = model.title;
     [self.navigationController pushViewController:vc animated:YES];
 }
+
+#pragma mark - SDCycleScrollViewDelegate
+
+- (void)cycleScrollView:(SDCycleScrollView *)cycleScrollView didSelectItemAtIndex:(NSInteger)index
+{
+    BKNewsModel *model = self.bannerList[index];
+    BKWebViewController *vc = [[BKWebViewController alloc] init];
+    vc.urlString = model.url;
+    vc.title = model.title;
+    [self.navigationController pushViewController:vc animated:YES];
+}
+
 
 @end

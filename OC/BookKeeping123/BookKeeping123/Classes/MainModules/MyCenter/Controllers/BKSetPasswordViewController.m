@@ -23,6 +23,16 @@
     BKCornerRadius(self.submitButton, 5);
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+}
+
 - (IBAction)submit {
     if (empty(_passwordTextField2.text)) {
         [SVProgressHUD showErrorWithStatus:@"请填写密码"];

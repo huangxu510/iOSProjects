@@ -10,12 +10,15 @@
 #import "BKAboutViewController.h"
 #import "BKFeedbackViewController.h"
 #import "BKLoginViewController.h"
+#import "BKCommonQuestionViewController.h"
+#import "BKUserInfo.h"
 
 @interface BKMyCenterViewController () <UITextFieldDelegate>
 
 @property (weak, nonatomic) IBOutlet UIView *topView;
 @property (weak, nonatomic) IBOutlet UIImageView *headImageView;
 @property (nonatomic, assign) BOOL appearFromPop;
+@property (weak, nonatomic) IBOutlet UILabel *userNameLabel;
 
 @end
 
@@ -35,6 +38,8 @@
     
     [self.navigationController setNavigationBarHidden:YES animated:_appearFromPop];
     _appearFromPop = NO;
+    
+    self.userNameLabel.text =  kUserPhoneNumber;
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -67,11 +72,15 @@
     item2.image = IMG(@"me_question");
     [item2 setItemOperation:^(NSIndexPath *indexPath) {
         weakSelf.appearFromPop = YES;
+        BKCommonQuestionViewController *vc = [[BKCommonQuestionViewController alloc] init];
+        [weakSelf.navigationController pushViewController:vc animated:YES];
     }];
     
     BKWordArrowItem *item3 = [BKWordArrowItem itemWithTitle:@"退出登录" subTitle:@""];
-    item3.image = IMG(@"me_logout");
+    item3.image = IMG(@"me_logout-1");
     [item3 setItemOperation:^(NSIndexPath *indexPath) {
+        [BKUserInfo shareInstance].password = nil;
+        [[BKUserInfo shareInstance] saveCache];
         BKLoginViewController *vc = [[BKLoginViewController alloc] init];
         BKBaseNavigationController *nav = [[BKBaseNavigationController alloc] initWithRootViewController:vc];
         [weakSelf.navigationController presentViewController:nav animated:YES completion:nil];

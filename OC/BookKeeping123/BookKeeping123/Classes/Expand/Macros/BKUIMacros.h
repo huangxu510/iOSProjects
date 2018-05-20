@@ -16,7 +16,7 @@
 #define kNavBgColor HexColor(0x00AE68)
 
 // 默认页面背景色
-#define kViewBgColor HexColor(0xf2f2f2)
+#define kViewBgColor HexColor(0xF8F7FD)
 
 // 分割线颜色
 #define kSeparatorLineColor HexColor(0xededed)

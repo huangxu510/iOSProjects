@@ -34,6 +34,7 @@
     _webView = [[WKWebView alloc] initWithFrame:CGRectZero];
     _webView.navigationDelegate = self;
     _webView.scrollView.bounces = NO;
+    _webView.navigationDelegate = self;
     [self.view addSubview:_webView];
     [_webView mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.equalTo(self.view);
@@ -85,6 +86,23 @@
 // 取消监听
 - (void)dealloc {
     [self.webView removeObserver:self forKeyPath:@"estimatedProgress"];
+}
+
+#pragma mark - WKNavigationDelegate
+- (void)webView:(WKWebView *)webView didCommitNavigation:(null_unspecified WKNavigation *)navigation {
+    NSLog(@"网页开始接收网页内容");
+    [webView evaluateJavaScript:@"document.getElementsByClassName('com_da')[0].style.display = 'NONE'" completionHandler:nil];
+}
+
+- (void)webView:(WKWebView *)webView didStartProvisionalNavigation:(null_unspecified WKNavigation *)navigation {
+    NSLog(@"webview开始加载网页内容");
+    [webView evaluateJavaScript:@"document.getElementsByClassName('com_da')[0].style.display = 'NONE'" completionHandler:nil];
+}
+
+
+- (void)webView:(WKWebView *)webView didFinishNavigation:(null_unspecified WKNavigation *)navigation
+{
+    [webView evaluateJavaScript:@"document.getElementsByClassName('com_da')[0].style.display = 'NONE'" completionHandler:nil];
 }
 
 @end

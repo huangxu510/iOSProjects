@@ -56,12 +56,10 @@
  */
 #define kCachePath [NSSearchPathForDirectoriesInDomains(NSCachesDirectory, NSUserDomainMask, YES) firstObject]
 
-// MainScreen Height&Width
-//#define kScreenHeight      [[UIScreen mainScreen] bounds].size.height
-//#define kScreenWidth       [[UIScreen mainScreen] bounds].size.width
-
-
-
+/**
+ *  用户手机号码
+ */
+#define kUserPhoneNumber [BKUserInfo shareInstance].phoneNumber
 
 
 //===========================================尺寸===========================================//
@@ -141,5 +139,11 @@ lastPathComponent], __LINE__, [NSString stringWithFormat:(s), ##__VA_ARGS__])
  */
 #define BKCornerRadius(view, radius)  view.layer.cornerRadius = radius;\
 view.layer.masksToBounds = YES;\
+
+#define BKShadow(view, offset, opacity) view.layer.shadowColor = [UIColor blackColor].CGColor;\
+view.layer.shadowOffset = CGSizeMake(offset, offset);\
+view.layer.shadowOpacity = opacity;\
+view.layer.shadowRadius = 4;\
+view.layer.masksToBounds = NO;\
 
 #endif /* Macros_h */

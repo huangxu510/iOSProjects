@@ -24,7 +24,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fZf-lI-9Wk">
-                    <rect key="frame" x="60" y="338" width="254" height="44"/>
+                    <rect key="frame" x="50" y="338" width="274" height="44"/>
                     <color key="backgroundColor" red="0.9040429592" green="0.46500521900000003" blue="0.27870848770000001" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="cST-bf-J0y"/>
@@ -54,7 +54,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="手机号" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="sjV-VG-7GG">
-                    <rect key="frame" x="60" y="184" width="255" height="35"/>
+                    <rect key="frame" x="50" y="184" width="275" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="E4V-3Z-SDG"/>
                     </constraints>
@@ -63,7 +63,7 @@
                     <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                 </textField>
                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="验证码" textAlignment="natural" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="wZe-Z1-ndy">
-                    <rect key="frame" x="60" y="247" width="165" height="35"/>
+                    <rect key="frame" x="50" y="247" width="185" height="35"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="35" id="meB-Y0-5Sx"/>
                     </constraints>
@@ -72,7 +72,7 @@
                     <textInputTraits key="textInputTraits" keyboardType="numberPad" secureTextEntry="YES"/>
                 </textField>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ieC-gI-aSh">
-                    <rect key="frame" x="240" y="247" width="75" height="35"/>
+                    <rect key="frame" x="250" y="247" width="75" height="35"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="75" id="2IE-o8-keR"/>
                         <constraint firstAttribute="height" constant="35" id="9FU-0h-Rdf"/>
@@ -103,14 +103,14 @@
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
                 <constraint firstItem="sjV-VG-7GG" firstAttribute="top" secondItem="3aP-bC-y3O" secondAttribute="bottom" constant="41" id="4Dk-rx-Hib"/>
-                <constraint firstAttribute="trailing" secondItem="ieC-gI-aSh" secondAttribute="trailing" constant="60" id="83r-GB-Kvn"/>
-                <constraint firstItem="wZe-Z1-ndy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="Cp1-QO-jAV"/>
-                <constraint firstItem="sjV-VG-7GG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="60" id="Fdx-B4-Aco"/>
+                <constraint firstAttribute="trailing" secondItem="ieC-gI-aSh" secondAttribute="trailing" constant="50" id="83r-GB-Kvn"/>
+                <constraint firstItem="wZe-Z1-ndy" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Cp1-QO-jAV"/>
+                <constraint firstItem="sjV-VG-7GG" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="50" id="Fdx-B4-Aco"/>
                 <constraint firstItem="ieC-gI-aSh" firstAttribute="leading" secondItem="wZe-Z1-ndy" secondAttribute="trailing" constant="15" id="JQI-cw-sb9"/>
                 <constraint firstItem="DHf-8B-AGZ" firstAttribute="centerX" secondItem="i5M-Pr-FkT" secondAttribute="centerX" id="Jey-fQ-Mae"/>
                 <constraint firstItem="fZf-lI-9Wk" firstAttribute="top" secondItem="wZe-Z1-ndy" secondAttribute="bottom" constant="56" id="SmW-1p-jJf"/>
                 <constraint firstItem="DHf-8B-AGZ" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="XVe-DT-EWr"/>
-                <constraint firstAttribute="trailing" secondItem="sjV-VG-7GG" secondAttribute="trailing" constant="60" id="XmM-YG-Ij6"/>
+                <constraint firstAttribute="trailing" secondItem="sjV-VG-7GG" secondAttribute="trailing" constant="50" id="XmM-YG-Ij6"/>
                 <constraint firstItem="fZf-lI-9Wk" firstAttribute="leading" secondItem="wZe-Z1-ndy" secondAttribute="leading" id="asO-F3-HQ7"/>
                 <constraint firstItem="DU2-ws-bib" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" constant="20" id="bT8-B3-64a"/>
                 <constraint firstItem="wZe-Z1-ndy" firstAttribute="top" secondItem="sjV-VG-7GG" secondAttribute="bottom" constant="28" id="beI-Z4-hJb"/>

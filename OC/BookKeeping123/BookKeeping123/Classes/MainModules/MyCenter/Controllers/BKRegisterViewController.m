@@ -28,6 +28,16 @@
     BKCornerRadius(self.registerButton, 5);
 }
 
+- (void)viewWillAppear:(BOOL)animated {
+    [super viewWillAppear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
+}
+
 - (IBAction)handleGetVerificationCode {
     
     if (!self.userNameTextField.text || [self.userNameTextField.text isEqualToString:@""]) {

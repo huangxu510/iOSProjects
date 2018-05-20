@@ -77,6 +77,7 @@
     [SVProgressHUD setMinimumDismissTimeInterval:1.5];
     [SVProgressHUD setMaximumDismissTimeInterval:1.5];
     [SVProgressHUD setDefaultStyle:SVProgressHUDStyleDark];
+    [SVProgressHUD setMinimumSize:CGSizeMake(100, 100)];
 }
 
 

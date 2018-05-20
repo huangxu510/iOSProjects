@@ -14,6 +14,7 @@
             <connections>
                 <outlet property="headImageView" destination="g6s-mR-6Wq" id="gg4-1Q-1nC"/>
                 <outlet property="topView" destination="2iR-F1-2oI" id="7fL-8p-3ef"/>
+                <outlet property="userNameLabel" destination="8h8-Sg-r1s" id="bbE-K3-loI"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
         </placeholder>

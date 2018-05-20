@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="EjP-ZM-PzB" customClass="BKCalculateButton">
+            <rect key="frame" x="0.0" y="0.0" width="274" height="171"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qgx-43-Ccu">
+                    <rect key="frame" x="0.0" y="0.0" width="274" height="171"/>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="THr-sa-RS7">
+                    <rect key="frame" x="103" y="13" width="68.5" height="68.5"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="THr-sa-RS7" secondAttribute="height" multiplier="1:1" id="9hc-eM-tW5"/>
+                    </constraints>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n6N-av-fpJ">
+                    <rect key="frame" x="10" y="91.5" width="254" height="26.5"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="26.5" id="nZm-N8-ta2"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="THr-sa-RS7" firstAttribute="top" secondItem="EjP-ZM-PzB" secondAttribute="top" constant="13" id="1o4-fu-jwJ"/>
+                <constraint firstItem="THr-sa-RS7" firstAttribute="centerX" secondItem="EjP-ZM-PzB" secondAttribute="centerX" id="2oL-mC-5qK"/>
+                <constraint firstItem="Qgx-43-Ccu" firstAttribute="top" secondItem="EjP-ZM-PzB" secondAttribute="top" id="FwL-F1-K6M"/>
+                <constraint firstAttribute="bottom" secondItem="Qgx-43-Ccu" secondAttribute="bottom" id="aND-Hi-YrT"/>
+                <constraint firstItem="Qgx-43-Ccu" firstAttribute="leading" secondItem="EjP-ZM-PzB" secondAttribute="leading" id="abt-rc-NJD"/>
+                <constraint firstItem="n6N-av-fpJ" firstAttribute="top" secondItem="THr-sa-RS7" secondAttribute="bottom" constant="10" id="eaS-bQ-rXV"/>
+                <constraint firstItem="THr-sa-RS7" firstAttribute="height" secondItem="EjP-ZM-PzB" secondAttribute="height" multiplier="2/5" id="kBG-x6-7t8"/>
+                <constraint firstItem="n6N-av-fpJ" firstAttribute="centerX" secondItem="EjP-ZM-PzB" secondAttribute="centerX" id="uWz-me-z8S"/>
+                <constraint firstItem="n6N-av-fpJ" firstAttribute="leading" secondItem="EjP-ZM-PzB" secondAttribute="leading" constant="10" id="uuJ-Bj-Na6"/>
+                <constraint firstAttribute="trailing" secondItem="Qgx-43-Ccu" secondAttribute="trailing" id="z2o-SV-C31"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="button" destination="Qgx-43-Ccu" id="B3N-5T-G8d"/>
+                <outlet property="imageView" destination="THr-sa-RS7" id="Khx-AC-Nka"/>
+                <outlet property="titleLabel" destination="n6N-av-fpJ" id="hfK-0R-57X"/>
+            </connections>
+            <point key="canvasLocation" x="63" y="11.5"/>
+        </view>
+    </objects>
+</document>

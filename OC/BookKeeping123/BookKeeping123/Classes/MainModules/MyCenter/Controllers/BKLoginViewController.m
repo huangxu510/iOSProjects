@@ -8,6 +8,7 @@
 
 #import "BKLoginViewController.h"
 #import "BKRegisterViewController.h"
+#import "BKUserInfo.h"
 
 @interface BKLoginViewController ()
 
@@ -25,12 +26,31 @@
     
     self.title = @"登录";
     BKCornerRadius(self.loginButton, 5);
+    
+    BKUserInfo *userInfo = [BKUserInfo shareInstance];
+    self.userNameTextField.text = userInfo.phoneNumber;
+    self.passwordTextField.text = userInfo.password;
+    
+    static dispatch_once_t onceToken;
+    dispatch_once(&onceToken, ^{
+        if (!empty(userInfo.phoneNumber) && !empty(userInfo.password)) {
+            [self handleLogin];
+        }
+    });
 }
+
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
     
     self.navigationController.navigationBar.hidden = YES;
+    
+    [[UIApplication sharedApplication] setStatusBarHidden:YES];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [[UIApplication sharedApplication] setStatusBarHidden:NO];
 }
 
 
@@ -48,8 +68,20 @@
     
     [SVProgressHUD showWithStatus:@"登录中..."];
     dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(1 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        if (![self.userNameTextField.text isEqualToString:@"18688886666"]) {
+            [SVProgressHUD showErrorWithStatus:@"该号码尚未注册！"];
+            return;
+        }
+        if (![self.passwordTextField.text isEqualToString:@"111111"]) {
+            [SVProgressHUD showErrorWithStatus:@"密码错误！"];
+            return;
+        }
         [SVProgressHUD dismiss];
         [self.navigationController dismissViewControllerAnimated:YES completion:nil];
+        BKUserInfo *userInfo = [BKUserInfo shareInstance];
+        userInfo.phoneNumber = self.userNameTextField.text;
+        userInfo.password = self.passwordTextField.text;
+        [userInfo saveCache];
     });
 }
 

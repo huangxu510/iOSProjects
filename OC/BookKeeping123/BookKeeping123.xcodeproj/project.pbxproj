@@ -68,6 +68,15 @@
 		4894D79920AECE7400328C48 /* BKCalculateResultTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894D79720AECE7400328C48 /* BKCalculateResultTableViewCell.m */; };
 		4894D79A20AECE7400328C48 /* BKCalculateResultTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 4894D79820AECE7400328C48 /* BKCalculateResultTableViewCell.xib */; };
 		4894D79D20AF04F700328C48 /* BKTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 4894D79C20AF04F700328C48 /* BKTableView.m */; };
+		48D912C420B00F5B00FBE0E7 /* BKCalculateButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D912C320B00F5B00FBE0E7 /* BKCalculateButton.m */; };
+		48D912C620B00F6300FBE0E7 /* BKCalculateButton.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D912C520B00F6300FBE0E7 /* BKCalculateButton.xib */; };
+		48D912CA20B05B2400FBE0E7 /* BKCommonQuestionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D912C820B05B2400FBE0E7 /* BKCommonQuestionViewController.m */; };
+		48D912CB20B05B2400FBE0E7 /* BKCommonQuestionViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D912C920B05B2400FBE0E7 /* BKCommonQuestionViewController.xib */; };
+		48D912D120B05B5D00FBE0E7 /* BKQuestionTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D912CF20B05B5D00FBE0E7 /* BKQuestionTableViewCell.m */; };
+		48D912D220B05B5D00FBE0E7 /* BKQuestionTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 48D912D020B05B5D00FBE0E7 /* BKQuestionTableViewCell.xib */; };
+		48D912D520B11D2900FBE0E7 /* BKBaseArchiver.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D912D420B11D2900FBE0E7 /* BKBaseArchiver.m */; };
+		48D912DB20B1200300FBE0E7 /* BKBookKeepingModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 48D912DA20B1200300FBE0E7 /* BKBookKeepingModel.m */; };
+		48E521F120B125FB00C248C4 /* BKUserInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 48E521F020B125FB00C248C4 /* BKUserInfo.m */; };
 		67B1406BDA2355707651CD1A /* Pods_defaults_BookKeeping123.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AEA4034AED2F99C727119A6A /* Pods_defaults_BookKeeping123.framework */; };
 /* End PBXBuildFile section */
 
@@ -180,6 +189,21 @@
 		4894D79820AECE7400328C48 /* BKCalculateResultTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BKCalculateResultTableViewCell.xib; sourceTree = "<group>"; };
 		4894D79B20AF04F700328C48 /* BKTableView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKTableView.h; sourceTree = "<group>"; };
 		4894D79C20AF04F700328C48 /* BKTableView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKTableView.m; sourceTree = "<group>"; };
+		48D912C220B00F5B00FBE0E7 /* BKCalculateButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKCalculateButton.h; sourceTree = "<group>"; };
+		48D912C320B00F5B00FBE0E7 /* BKCalculateButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKCalculateButton.m; sourceTree = "<group>"; };
+		48D912C520B00F6300FBE0E7 /* BKCalculateButton.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BKCalculateButton.xib; sourceTree = "<group>"; };
+		48D912C720B05B2400FBE0E7 /* BKCommonQuestionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKCommonQuestionViewController.h; sourceTree = "<group>"; };
+		48D912C820B05B2400FBE0E7 /* BKCommonQuestionViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKCommonQuestionViewController.m; sourceTree = "<group>"; };
+		48D912C920B05B2400FBE0E7 /* BKCommonQuestionViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BKCommonQuestionViewController.xib; sourceTree = "<group>"; };
+		48D912CE20B05B5D00FBE0E7 /* BKQuestionTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKQuestionTableViewCell.h; sourceTree = "<group>"; };
+		48D912CF20B05B5D00FBE0E7 /* BKQuestionTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKQuestionTableViewCell.m; sourceTree = "<group>"; };
+		48D912D020B05B5D00FBE0E7 /* BKQuestionTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BKQuestionTableViewCell.xib; sourceTree = "<group>"; };
+		48D912D320B11D2900FBE0E7 /* BKBaseArchiver.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKBaseArchiver.h; sourceTree = "<group>"; };
+		48D912D420B11D2900FBE0E7 /* BKBaseArchiver.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKBaseArchiver.m; sourceTree = "<group>"; };
+		48D912D920B1200300FBE0E7 /* BKBookKeepingModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKBookKeepingModel.h; sourceTree = "<group>"; };
+		48D912DA20B1200300FBE0E7 /* BKBookKeepingModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKBookKeepingModel.m; sourceTree = "<group>"; };
+		48E521EF20B125FB00C248C4 /* BKUserInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BKUserInfo.h; sourceTree = "<group>"; };
+		48E521F020B125FB00C248C4 /* BKUserInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BKUserInfo.m; sourceTree = "<group>"; };
 		4FF5E6F2FA6E66CC530DB9D0 /* Pods-defaults-BookKeeping123.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-BookKeeping123.release.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-BookKeeping123/Pods-defaults-BookKeeping123.release.xcconfig"; sourceTree = "<group>"; };
 		76BE589C50F86365328616CE /* Pods-defaults-BookKeeping123.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-defaults-BookKeeping123.debug.xcconfig"; path = "Pods/Target Support Files/Pods-defaults-BookKeeping123/Pods-defaults-BookKeeping123.debug.xcconfig"; sourceTree = "<group>"; };
 		AEA4034AED2F99C727119A6A /* Pods_defaults_BookKeeping123.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_defaults_BookKeeping123.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +308,8 @@
 			isa = PBXGroup;
 			children = (
 				4863B92F20AC002100A58D1D /* Controllers */,
+				48D912CD20B05B3500FBE0E7 /* Models */,
+				48D912CC20B05B2F00FBE0E7 /* Views */,
 			);
 			path = MyCenter;
 			sourceTree = "<group>";
@@ -311,12 +337,9 @@
 		4863B65A20AA7D3600A58D1D /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
-				4863B65B20AA7D9000A58D1D /* BKHomePageViewController.h */,
-				4863B65C20AA7D9000A58D1D /* BKHomePageViewController.m */,
-				4863B65D20AA7D9000A58D1D /* BKHomePageViewController.xib */,
-				4863B86B20AAED7C00A58D1D /* BKAdvertisementView.h */,
-				4863B86C20AAED7C00A58D1D /* BKAdvertisementView.m */,
-				4863B86E20AAED8800A58D1D /* BKAdvertisementView.xib */,
+				48D912D820B11FE100FBE0E7 /* Views */,
+				48D912D720B11FDB00FBE0E7 /* Models */,
+				48D912D620B11FC000FBE0E7 /* Controllers */,
 			);
 			path = HomePage;
 			sourceTree = "<group>";
@@ -339,6 +362,8 @@
 				4863B68920AA827400A58D1D /* BKBaseNavigationController.m */,
 				4863B90320AB160C00A58D1D /* BKStaticTableViewController.h */,
 				4863B90420AB160C00A58D1D /* BKStaticTableViewController.m */,
+				48D912D320B11D2900FBE0E7 /* BKBaseArchiver.h */,
+				48D912D420B11D2900FBE0E7 /* BKBaseArchiver.m */,
 			);
 			path = Base;
 			sourceTree = "<group>";
@@ -460,6 +485,9 @@
 				4863B92A20ABDD4E00A58D1D /* BKFeedbackViewController.h */,
 				4863B92B20ABDD4E00A58D1D /* BKFeedbackViewController.m */,
 				4863B92C20ABDD4E00A58D1D /* BKFeedbackViewController.xib */,
+				48D912C720B05B2400FBE0E7 /* BKCommonQuestionViewController.h */,
+				48D912C820B05B2400FBE0E7 /* BKCommonQuestionViewController.m */,
+				48D912C920B05B2400FBE0E7 /* BKCommonQuestionViewController.xib */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -573,6 +601,57 @@
 				4894D79620AECE7400328C48 /* BKCalculateResultTableViewCell.h */,
 				4894D79720AECE7400328C48 /* BKCalculateResultTableViewCell.m */,
 				4894D79820AECE7400328C48 /* BKCalculateResultTableViewCell.xib */,
+				48D912C220B00F5B00FBE0E7 /* BKCalculateButton.h */,
+				48D912C320B00F5B00FBE0E7 /* BKCalculateButton.m */,
+				48D912C520B00F6300FBE0E7 /* BKCalculateButton.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48D912CC20B05B2F00FBE0E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				48D912CE20B05B5D00FBE0E7 /* BKQuestionTableViewCell.h */,
+				48D912CF20B05B5D00FBE0E7 /* BKQuestionTableViewCell.m */,
+				48D912D020B05B5D00FBE0E7 /* BKQuestionTableViewCell.xib */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		48D912CD20B05B3500FBE0E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48E521EF20B125FB00C248C4 /* BKUserInfo.h */,
+				48E521F020B125FB00C248C4 /* BKUserInfo.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48D912D620B11FC000FBE0E7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				4863B65B20AA7D9000A58D1D /* BKHomePageViewController.h */,
+				4863B65C20AA7D9000A58D1D /* BKHomePageViewController.m */,
+				4863B65D20AA7D9000A58D1D /* BKHomePageViewController.xib */,
+				4863B86B20AAED7C00A58D1D /* BKAdvertisementView.h */,
+				4863B86C20AAED7C00A58D1D /* BKAdvertisementView.m */,
+				4863B86E20AAED8800A58D1D /* BKAdvertisementView.xib */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		48D912D720B11FDB00FBE0E7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				48D912D920B1200300FBE0E7 /* BKBookKeepingModel.h */,
+				48D912DA20B1200300FBE0E7 /* BKBookKeepingModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		48D912D820B11FE100FBE0E7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -662,10 +741,13 @@
 				4894D79520AEC76800328C48 /* BKCalculateResultView.xib in Resources */,
 				4863B64620AA797200A58D1D /* Assets.xcassets in Resources */,
 				4863B65F20AA7D9000A58D1D /* BKHomePageViewController.xib in Resources */,
+				48D912CB20B05B2400FBE0E7 /* BKCommonQuestionViewController.xib in Resources */,
 				4863B94120AC088800A58D1D /* BKNewsTableViewCell.xib in Resources */,
 				4863B66920AA7DD800A58D1D /* BKInformationViewController.xib in Resources */,
+				48D912D220B05B5D00FBE0E7 /* BKQuestionTableViewCell.xib in Resources */,
 				4894D76C20AC350000328C48 /* BKToolViewController.xib in Resources */,
 				4863B92E20ABDD4E00A58D1D /* BKFeedbackViewController.xib in Resources */,
+				48D912C620B00F6300FBE0E7 /* BKCalculateButton.xib in Resources */,
 				4894D78720AEC3F200328C48 /* province_data.xml in Resources */,
 				4863B69B20AA8A9200A58D1D /* BKSetPasswordViewController.xib in Resources */,
 				4863B66E20AA7DF600A58D1D /* BKMyCenterViewController.xib in Resources */,
@@ -690,6 +772,7 @@
 				"${BUILT_PRODUCTS_DIR}/IQKeyboardManager/IQKeyboardManager.framework",
 				"${BUILT_PRODUCTS_DIR}/MJRefresh/MJRefresh.framework",
 				"${BUILT_PRODUCTS_DIR}/Masonry/Masonry.framework",
+				"${BUILT_PRODUCTS_DIR}/SDCycleScrollView/SDCycleScrollView.framework",
 				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SVProgressHUD/SVProgressHUD.framework",
 				"${BUILT_PRODUCTS_DIR}/YYKit/YYKit.framework",
@@ -702,6 +785,7 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/IQKeyboardManager.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MJRefresh.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Masonry.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDCycleScrollView.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SVProgressHUD.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YYKit.framework",
@@ -747,6 +831,9 @@
 				4863B67220AA7E3300A58D1D /* BKTabBarViewController.m in Sources */,
 				4863B92D20ABDD4E00A58D1D /* BKFeedbackViewController.m in Sources */,
 				4894D77020AD0DBE00328C48 /* UIFactory.m in Sources */,
+				48D912D520B11D2900FBE0E7 /* BKBaseArchiver.m in Sources */,
+				48E521F120B125FB00C248C4 /* BKUserInfo.m in Sources */,
+				48D912DB20B1200300FBE0E7 /* BKBookKeepingModel.m in Sources */,
 				4894D78820AEC3F200328C48 /* MOFSDatePicker.m in Sources */,
 				4863B69A20AA8A9200A58D1D /* BKSetPasswordViewController.m in Sources */,
 				4863B63E20AA797100A58D1D /* AppDelegate.m in Sources */,
@@ -755,6 +842,7 @@
 				4863B93920AC00CA00A58D1D /* PPNetworkCache.m in Sources */,
 				4863B91420AB181100A58D1D /* BKSmallCalculatorViewController.m in Sources */,
 				4894D79320AEC75900328C48 /* BKCalculateResultView.m in Sources */,
+				48D912D120B05B5D00FBE0E7 /* BKQuestionTableViewCell.m in Sources */,
 				4863B91720AB183A00A58D1D /* BKCreditCalculatorViewController.m in Sources */,
 				4863B86D20AAED7C00A58D1D /* BKAdvertisementView.m in Sources */,
 				4863B90520AB160C00A58D1D /* BKStaticTableViewController.m in Sources */,
@@ -764,6 +852,7 @@
 				4863B92820ABDA8A00A58D1D /* BKAboutViewController.m in Sources */,
 				4894D78A20AEC3F200328C48 /* MOFSPickerManager.m in Sources */,
 				4863B94720AC14C500A58D1D /* BKWebViewController.m in Sources */,
+				48D912CA20B05B2400FBE0E7 /* BKCommonQuestionViewController.m in Sources */,
 				4894D78B20AEC3F200328C48 /* MOFSPickerView.m in Sources */,
 				4863B92020AB18A200A58D1D /* BKBusinessLoanCalculatorViewController.m in Sources */,
 				4863B66D20AA7DF600A58D1D /* BKMyCenterViewController.m in Sources */,
@@ -778,6 +867,7 @@
 				4894D78D20AEC3F200328C48 /* MOFSAddressPickerView.m in Sources */,
 				4894D79920AECE7400328C48 /* BKCalculateResultTableViewCell.m in Sources */,
 				4894D78920AEC3F200328C48 /* MOFSToolView.m in Sources */,
+				48D912C420B00F5B00FBE0E7 /* BKCalculateButton.m in Sources */,
 				4863B93C20AC03C600A58D1D /* BKNewsModel.m in Sources */,
 				4863B90C20AB166C00A58D1D /* BKWordItem.m in Sources */,
 			);
@@ -903,7 +993,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5686PPTR3P;
+				DEVELOPMENT_TEAM = ZYW7NT46WN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BookKeeping123/Classes/Vender/YYKit/Vendor",
@@ -916,7 +1006,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abcdefg.BookKeeping123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abcdefg.BookKeeping1234;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -929,7 +1019,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 5686PPTR3P;
+				DEVELOPMENT_TEAM = ZYW7NT46WN;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)/BookKeeping123/Classes/Vender/YYKit/Vendor",
@@ -942,7 +1032,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.abcdefg.BookKeeping123;
+				PRODUCT_BUNDLE_IDENTIFIER = com.abcdefg.BookKeeping1234;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};

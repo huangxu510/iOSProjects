@@ -24,7 +24,7 @@ UITableViewDataSource
     
     self.edgesForExtendedLayout = UIRectEdgeNone;
     self.isShowBackButton = YES;
-    
+    self.view.backgroundColor = HexColor(0xF8F7FD);
 }
 
 - (void)loadData {

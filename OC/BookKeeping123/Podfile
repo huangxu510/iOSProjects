@@ -20,6 +20,7 @@ abstract_target 'defaults' do
     pod 'MJRefresh'
     pod 'SVProgressHUD'
     pod 'pop'
+    pod 'SDCycleScrollView','~> 1.75'
     
     
     target 'BookKeeping123' do
